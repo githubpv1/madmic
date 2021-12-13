@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="сайт компании ">
+	<title>Madmic</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Play:wght@400;700&display=swap"
+		rel="stylesheet">
+
+	<!-- favicons -->
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<div class="overlay"></div>
+
+
+		<header class="head" data-lock>
+			<div class="head__body container">
+
+				<a class="logo" href="#">
+					<div class="logo__wrap"><img class="logo__img" src="img/logo/logo.png" width="50" height="50" alt="логотип">
+					</div>
+					<div class="logo__text">официальный <br> партнер</div>
+					<!-- <a class="logo__link" href="index.html" title="на главную"></a> -->
+				</a>
+
+				<!-- menu  desktop + mobile js -->
+
+				<nav class="menu-start" data-start="1">
+					<ul class="menu" data-move="1" data-media="1">
+						<li><a  href="#catalog">Микрофоны</a></li>
+						<li><a  href="#buy">О компании</a></li>
+						<li><a  href="#delivery">Доставка</a></li>
+					</ul>
+				</nav>
+				<div class="head__tel-start" data-start="2">
+					<div class="head__tel contact" data-move="2" data-media="0">
+						<div class="head__tel-icon icon-1 icon-call"></div>
+						<ul>
+							<li><a class="head__tel-link" href="tel:+380443334773" rel="nofollow">+7 (495) 790-34-87</a></li>
+							<li><a class="head__tel-link" href="tel:+380443334773" rel="nofollow">+7 (495) 790-34-87</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<button class="head__btn btn" onclick="openDialog('dialog-request', this)">оставить заявку
+				</button>
+
+				<div class="wrap__burger">
+					<button class="burger" aria-label="открыть меню">
+						<span></span>
+					</button>
+				</div>
+
+				<!-- menu  desktop + mobile -->
+
+				<nav class="navbar">
+					<div class="navbar__body">
+						<div data-where="1"></div>
+						<div data-where="2"></div>
+					</div>
+				</nav>
+			</div>
+
+
+		</header>
+
+<main class="main">
+
+  <section class="hero">
+    <picture>
+      <source srcset="img/bg-1.webp" type="image/webp">
+      <img src="img/bg-1.jpg" width="" height="" alt="">
+    </picture>
+    <div class="hero__container container">
+      <div class="hero__col col-md-6 col-xl-5">
+        <div class="hero__suptitle">лучший подарок для взрослых и детей</div>
+        <h1 class="hero__title title-1">Tosing</h1>
+        <div class="hero__text">умный микрофон, заменяющий караоке систему</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="best">
+    <div class="container">
+      <div class="row">
+        <div class="best__col circle">
+          <div class="circle__wrap-img">
+            <picture>
+              <source srcset="img/1.webp" type="image/webp">
+              <img src="img/2.jpg" width="150" height="150" alt="">
+            </picture>
+            <div class="circle__icon icon-bluetooth"></div>
+          </div>
+          <div class="circle__desc">
+            <div class="circle__title">Подключение к любому устройству по Bluetooth </div>
+            <div class="circle__text">позволяет Вам петь песни в любое время и в любом месте с реальным эффектом караоке
+            </div>
+          </div>
+        </div>
+
+        <div class="best__col circle">
+          <div class="circle__wrap-img">
+            <picture>
+              <source srcset="img/7.webp" type="image/webp">
+              <img src="img/1.jpg" width="150" height="150" alt="">
+            </picture>
+            <div class="circle__icon icon-battery"></div>
+          </div>
+          <div class="circle__desc">
+            <div class="circle__title">Мощный встроенный аккумулятор </div>
+            <div class="circle__text">дает возможность петь до 12 часов без дополнительной подзарядки</div>
+          </div>
+        </div>
+
+        <div class="best__col circle">
+          <div class="circle__wrap-img">
+            <picture>
+              <source srcset="img/2.webp" type="image/webp">
+              <img src="img/1.jpg" width="150" height="150" alt="">
+            </picture>
+            <div class="circle__icon icon-volume"></div>
+          </div>
+          <div class="circle__desc">
+            <div class="circle__title">Мощные встроенные динамики </div>
+            <div class="circle__text">воспроизводят стерео звук, и подарят Вам музыкальный праздник</div>
+          </div>
+        </div>
+
+        <div class="best__col circle">
+          <div class="circle__wrap-img">
+            <picture>
+              <source srcset="img/3.webp" type="image/webp">
+              <img src="img/1.jpg" width="150" height="150" alt="">
+            </picture>
+            <div class="circle__icon icon-mic"></div>
+          </div>
+          <div class="circle__desc">
+            <div class="circle__title">Из любого музыкального центра или автомобиля </div>
+            <div class="circle__text">можно сделать караоке систему, соединяясь по FM радиочастоте и выводя звук на
+              колонки</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog" id="catalog">
+    <div class="container">
+      <h2 class="catalog__title title-2">Каталог микрофонов <span> Tosing</span></h2>
+      <div class="row catalog__row">
+        <article class="catalog__product product">
+          <div class="product__wrap">
+            <div class="product__info">
+              <div class="product__title-col">
+                <h3 class="product__title title-3">Tosing </h3>
+                <div class="product__prices">
+                  <div class="product__price title-3">4100 ₽</div>
+                </div>
+              </div>
+            </div>
+            <a class="product__wrap-img _contain" href="#!">
+              <picture>
+                <source srcset="img/02.webp" type="image/webp">
+                <img src="img/02.jpg" alt="">
+              </picture>
+            </a>
+          </div>
+          <div class="product__text">беспроводной Bluetooth-микрофон нового поколения, RETRO STYLE</div>
+          <button class="product__btn btn icon-shopping" onclick="openDialog('dialog-buy', this)">купить</button>
+        </article>
+
+        <article class="catalog__product product">
+          <div class="product__wrap">
+            <div class="product__info">
+              <div class="product__title-col">
+                <h3 class="product__title title-3">Tosing G1 SILVER Tosing</h3>
+                <div class="product__prices">
+                  <div class="title-3 product__price product__price--old">4999 ₽</div>
+                  <div class="title-3 product__price product__price--new">3699 ₽</div>
+                </div>
+              </div>
+              <a class="product__wrap-img _contain" href="#!">
+                <picture>
+                  <source srcset="img/04.webp" type="image/webp">
+                  <img src="img/04.jpg" alt="">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="product__text">беспроводной Bluetooth-микрофон нового поколения, RETRO STYLE нового поколения,
+            RETRO STYLE</div>
+          <button class="product__btn btn icon-shopping" onclick="openDialog('dialog-buy', this)">купить</button>
+        </article>
+
+        <article class="catalog__product product">
+          <div class="product__wrap">
+            <div class="product__info">
+              <div class="product__title-col">
+                <h3 class="product__title title-3">Tosing G1 SILVER Tosing</h3>
+                <div class="product__prices">
+                  <div class="title-3 product__price product__price--old">4999 ₽</div>
+                  <div class="title-3 product__price product__price--new">3699 ₽</div>
+                </div>
+              </div>
+              <a class="product__wrap-img _contain" href="#!">
+                <picture>
+                  <source srcset="img/03.webp" type="image/webp">
+                  <img src="img/03.jpg" alt="">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="product__text">беспроводной Bluetooth-микрофон нового поколения, RETRO STYLE нового поколения,
+            RETRO STYLE</div>
+          <button class="product__btn btn icon-shopping" onclick="openDialog('dialog-buy', this)">купить</button>
+        </article>
+
+      </div>
+      <button class="btn-more icon-refresh">показать еще</button>
+    </div>
+  </section>
+
+  <section class="buy" id="buy">
+    <div class="container">
+      <div class="buy__row row">
+        <div class="buy__col-title">
+          <h2 class="__title title-2"> <span> MADMIC —</span> Профессиональное музыкальное оборудование!</h2>
+          <a class="btn" href="#!">Перейти в магазин</a>
+        </div>
+        <div class="buy__col-img">
+          <h3 class="buy__title-3 title-3">Купи микрофон у официального диллера</h3>
+          <picture>
+            <source srcset="img/9.webp" type="image/webp">
+            <img src="img/9.jpg" width="190" height="274" alt="">
+          </picture>
+        </div>
+        <div class="buy__col-text">
+          <p>Ищете где купить караоке систему, микрофоны или другое музыкальное оборудование?
+            Хорошая новость, Вы попали по адресу!
+            <b> Мы знаем о звуковом оборудовании все! И готовы помочь Вам с выбором,</b> будь то простая домашняя
+            караоке
+            система или профессиональное музыкальное оборудование!
+          </p>
+          <p> <b> Мы работаем</b> на рынке звукового оборудования с 2011 года и за это время мы стали надежными
+            партнерами для
+            крупных международных поставщиков звукового оборудования, это дает нам возможность предлагать Вам самые
+            низкие цены в Москве!</p>
+          <p>Мы тщательно следим за новинками в индустрии звукового оборудования, поэтому все <b> самое свежее и
+              интересное</b>
+            Вы можете найти в нашем магазине!</p>
+        </div>
+      </div>
+
+      <div class="buy__buns buns row">
+        <div class="buns__col">
+          <div class="buns__text icon-surface">Гарантия на каждую товарную позицию</div>
+        </div>
+        <div class="buns__col">
+          <div class="buns__text icon-calling">Квалифицированная помощь опытных менеджеров
+          </div>
+        </div>
+        <div class="buns__col">
+          <div class="buns__text icon-receive">Ориентир на предпочтения клиента</div>
+        </div>
+        <div class="buns__col">
+          <div class="buns__text icon-logistics">Сжатые сроки доставки</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="delivery" id="delivery">
+    <div class="container">
+      <div class="row">
+        <div class="delivery__col circle">
+          <div class="circle__wrap-img">
+            <picture>
+              <source srcset="img/4.webp" type="image/webp">
+              <img src="img/4.jpg" width="150" height="150" alt="">
+            </picture>
+            <div class="circle__icon icon-car"></div>
+          </div>
+          <div class="circle__desc">
+            <div class="circle__title">По Москве и Питеру курьером </div>
+            <ul class="circle__text delivery__list">
+              <li>Доставка собственной курьерской службой. Срок доставки - <span> 1 день.</span> </li>
+              <li>Стоимость доставки по Москве (в пределах МКАД или конечных станций Московского Метрополитена)
+                составляет
+                <span>от 350 руб.</span>
+              </li>
+              <li>Стоимость доставки за пределы МКАД составляет <span> от 350 руб. до 1000 руб</span>. и оговаривается с
+                менеджером.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="delivery__col circle">
+          <div class="circle__wrap-img">
+            <picture>
+              <source srcset="img/5.webp" type="image/webp">
+              <img src="img/5.jpg" width="150" height="150" alt="">
+            </picture>
+            <div class="circle__icon icon-map-pin"></div>
+          </div>
+          <div class="circle__desc">
+            <div class="circle__title">Самовывоз в Москве </div>
+            <ul class="circle__text delivery__list">
+              <li>Москва, Багратионовский проезд д.7, корпус 3, ТЦ "Горбушкин Двор"</li>
+              <li>Наш магазин расположен на первом этаже, павильон С1-044 </li>
+              <li>Время работы пункта самовывоза
+                <span> Ежедневно с 10:00 до 20:30</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="delivery__col circle">
+          <div class="circle__wrap-img">
+            <picture>
+              <source srcset="img/6.webp" type="image/webp">
+              <img src="img/6.jpg" width="150" height="150" alt="">
+            </picture>
+            <div class="circle__icon icon-package"></div>
+          </div>
+          <div class="circle__desc">
+            <div class="circle__title">Доставка ДК СДЕК и Почтой России </div>
+            <ul class="circle__text delivery__list">
+              <li>Доставка в регионы возможна <span> после 100% предоплаты.</span> </li>
+              <li>В отдельных случаях, возможна оплата наложенным платежом. </li>
+              <li>О стоимости, сроках и видах доставки вам расскажет менеджер при подтверждении заказа.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="request">
+    <div class="request__container container">
+      <div class="request__row row">
+
+        <div class="request__icon icon-1 icon-call"></div>
+
+        <div class="request__col col-md-5">
+          <h2 class="request__title title-2">оставьте заявку</h2>
+        </div>
+        <div class="request__col col-md-7">
+          <div class="request__text">На выбранный микрофон, или мы можем ответить на ваши вопросы и помочь с выбором
+          </div>
+        </div>
+
+        <form class="request__form form row" data-test data-message="ok" action="send.php" method="post" novalidate>
+          <div class="request__form-item form__item ">
+            <div class="select-wrap ">
+              <select class="select" data-select aria-label="country" name="" form="" required>
+                <option class="invalid" value="" hidden>Выберите модель</option>
+                <option class="" value="1">Название 1</option>
+                <option class="" value="2">Название 2</option>
+                <option class="" value="3">Название 3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="request__form-item form__item col-md ">
+            <input class="form__input form__input--page" placeholder="представьтесь" aria-label="name" name="name"
+              type="text" />
+          </div>
+          <div class="request__form-item form__item col-md">
+            <input class="form__input form__input--page" placeholder="Телефон" aria-label="tel" name="tel" type="tel" />
+          </div>
+          <div class="col-md-auto">
+            <button class="btn request__btn">отправить</button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer__row row">
+
+			<div class="footer__col footer__col-policy ">
+				<a class="footer__link policy" href="#!">Политика конфиденциальности</a>
+				<div class="copy">2021 © MADMIC.RU Интернет-магазин звука и караоке </div>
+			</div>
+
+			<div class="footer__col col-md-auto">
+				<div class="footer__contact contact">
+					<div class="contact__icon icon-1 icon-mail"></div>
+					<a class="footer__link" href="#!">info@madmic.pro</a>
+				</div>
+			</div>
+
+			<div class="footer__col col-md-auto">
+				<div class="footer__contact contact">
+					<div class="contact__icon icon-1 icon-call"></div>
+					<ul>
+						<li><a class="footer__link" href="tel:+380443334773">+7 (495) 790-34-87</a></li>
+						<li><a class="footer__link" href="tel:+380443334773">+7 (495) 790-34-87</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</footer>
+
+</div><!-- wrapper -->
+
+<!-- <button class="" onclick="openDialog('dialog-', this)" type="button"></button> -->
+<!-- <button class="" onclick="replaceDialog('dialog-')" type="button"></button> -->
+
+<div class="dialog-backdrop" onclick="clickBtnClose(this)">
+  <div class="modal" id="dialog-buy" role="dialog" aria-labelledby="dialog_label" aria-modal="true">
+
+    <button onclick="closeDialog(this)" class="modal__close" aria-label="Close">
+      <svg class="icon"><use xlink:href="icon.svg#icon-close"></use></svg>
+    </button>
+
+    <div class="modal__content">
+
+      <div class="modal__head">
+        <picture>
+          <source srcset="img/02.webp" type="image/webp">
+          <img src="img/02.jpg" width="" height="" alt="">
+        </picture>
+        <div class="">
+          <div class="modal__title" id="dialog_label">Tosing q12 pink </div>
+          <div class="modal__prices">
+            <div class="modal__price-old">4990 ₽</div>
+            <div class="modal__prices-new">3699 ₽</div>
+          </div>
+        </div>
+      </div>
+
+      <form class="modal__form form " data-test data-message="ok" action="send.php" method="post" novalidate>
+
+        <div class="modal__form-item form__item col- ">
+          <input class="form__input form__input--mod" placeholder="представьтесь" aria-label="name" name="name"
+            type="text" />
+        </div>
+        <div class="modal__form-item form__item col-">
+          <input class="form__input form__input--mod" placeholder="Телефон" aria-label="tel" name="tel" type="tel" />
+        </div>
+        <div class="">
+          <button class="btn modal__btn">отправить</button>
+        </div>
+
+      </form>
+      <div class="modal__text">Нажимая на кнопку “Отправить” я даю согласие на обработку моих персональных данных </div>
+      <a class="modal__link icon-share" href="#!">купить в магазине</a>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- request -->
+
+<div class="dialog-backdrop" onclick="clickBtnClose(this)">
+  <div class="modal" id="dialog-request" role="dialog" aria-labelledby="dialog_label2" aria-modal="true">
+
+    <button onclick="closeDialog(this)" class="modal__close" aria-label="Close">
+      <svg class="icon"><use xlink:href="icon.svg#icon-close"></use></svg>
+    </button>
+
+    <div class="modal__content">
+
+      <div class="modal__title modal__title--request" id="dialog_label2">оставить заявку </div>
+
+      <form class="modal__form form " data-test data-message="ok" action="send.php" method="post" novalidate>
+
+        <div class="modal__form-item form__item col- ">
+          <input class="form__input form__input--mod" placeholder="представьтесь" aria-label="name" name="name"
+            type="text" />
+        </div>
+        <div class="modal__form-item form__item col-">
+          <input class="form__input form__input--mod" placeholder="Телефон" aria-label="tel" name="tel" type="tel" />
+        </div>
+        <div class="">
+          <button class="btn modal__btn">отправить</button>
+        </div>
+
+      </form>
+      <div class="modal__text">Нажимая на кнопку “Отправить” я даю согласие на обработку моих персональных данных </div>
+      <a class="modal__link icon-share" href="#!">купить в магазине</a>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ok -->
+
+<div class="dialog-backdrop" onclick="clickBtnClose(this)">
+
+  <div class="hidde modal" id="dialog-ok" role="dialog" aria-labelledby="dialog_label" aria-modal="true">
+    <button onclick="closeDialog(this)" class="modal__close " aria-label="Close">
+      <svg class="icon"><use xlink:href="icon.svg#icon-close"></use></svg>
+    </button>
+    <div class="modal__content">
+
+      <div class="modal__title modal__title--ok" id="dialog_label">Спасибо!</div>
+      <div class="modal__text modal__text--ok">Мы свяжемся с вами в ближайшее время</div>
+      <button class="modal__btn btn btn-red" onclick="closeDialog(this)" aria-label="Close">Хорошо</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
