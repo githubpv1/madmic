@@ -24,6 +24,7 @@
 
 </head>
 
+
 <body>
 
 	<div class="wrapper">
@@ -35,7 +36,11 @@
 			<div class="head__body container">
 
 				<a class="logo" href="#">
-					<div class="logo__wrap"><img class="logo__img" src="img/logo/logo.png" width="50" height="50" alt="логотип">
+					<div class="logo__wrap">
+						<picture>
+							<source srcset="img/logo/logo.webp" type="image/webp">
+							<img class="logo__img" src="img/logo/logo.png" width="50" height="50" alt="логотип">
+						</picture>
 					</div>
 					<div class="logo__text">официальный <br> партнер</div>
 				</a>
@@ -49,6 +54,7 @@
 						<li><a  href="#delivery">Доставка</a></li>
 					</ul>
 				</nav>
+
 				<div class="head__tel-start" data-start="2">
 					<div class="head__tel contact" data-move="2" data-media="0">
 						<div class="head__tel-icon icon-1 icon-call"></div>
@@ -81,13 +87,14 @@
 
 		</header>
 
+
+
+
+
+
 <main class="main">
 
   <section class="hero">
-    <picture>
-      <source srcset="img/bg-1.webp" type="image/webp">
-      <img src="img/bg-1.jpg" width="" height="" alt="">
-    </picture>
     <div class="hero__container container">
       <div class="hero__col col-md-6 col-xl-5">
         <div class="hero__suptitle">лучший подарок для взрослых и детей</div>
@@ -163,7 +170,7 @@
 
   <section class="catalog" id="catalog">
     <div class="container">
-      <h2 class="catalog__title title-2">Каталог микрофонов <span> Tosing</span></h2>
+      <h2 class="catalog__title title-2" data-aos="fade-right">Каталог микрофонов <span> Tosing</span></h2>
       <div class="row catalog__row">
         <article class="catalog__product product">
           <div class="product__wrap">
@@ -177,8 +184,8 @@
             </div>
             <a class="product__wrap-img _contain" href="#!">
               <picture>
-                <source srcset="img/02.webp" type="image/webp">
-                <img src="img/02.jpg" alt="">
+                <source data-srcset="img/02.webp" type="image/webp">
+                <img class="lazy" data-src="img/02.jpg" src="img/1x1.png" loading="lazy" alt="image">
               </picture>
             </a>
           </div>
@@ -198,8 +205,8 @@
               </div>
               <a class="product__wrap-img _contain" href="#!">
                 <picture>
-                  <source srcset="img/04.webp" type="image/webp">
-                  <img src="img/04.jpg" alt="">
+                  <source data-srcset="img/04.webp" type="image/webp">
+                  <img class="lazy" data-src="img/04.jpg" src="img/1x1.png" loading="lazy" alt="image2">
                 </picture>
               </a>
             </div>
@@ -221,8 +228,8 @@
               </div>
               <a class="product__wrap-img _contain" href="#!">
                 <picture>
-                  <source srcset="img/03.webp" type="image/webp">
-                  <img src="img/03.jpg" alt="">
+                  <source data-srcset="img/03.webp" type="image/webp">
+                  <img class="lazy" data-src="img/03.jpg" src="img/1x1.png" loading="lazy" alt="image3">
                 </picture>
               </a>
             </div>
@@ -241,7 +248,7 @@
     <div class="container">
       <div class="buy__row row">
         <div class="buy__col-title">
-          <h2 class="__title title-2"> <span> MADMIC —</span> Профессиональное музыкальное оборудование!</h2>
+          <h2 class="__title title-2 " data-aos="fade-right"> <span> MADMIC —</span> Профессиональное музыкальное оборудование!</h2>
           <a class="btn" href="#!">Перейти в магазин</a>
         </div>
         <div class="buy__col-img">
@@ -527,13 +534,13 @@
 
 <div class="dialog-backdrop" onclick="clickBtnClose(this)">
 
-  <div class="hidde modal" id="dialog-ok" role="dialog" aria-labelledby="dialog_label" aria-modal="true">
+  <div class="hidde modal" id="dialog-ok" role="dialog" aria-labelledby="dialog_label3" aria-modal="true">
     <button onclick="closeDialog(this)" class="modal__close " aria-label="Close">
       <svg class="icon"><use xlink:href="#icon-close"></use></svg>
     </button>
     <div class="modal__content">
 
-      <div class="modal__title modal__title--ok" id="dialog_label">Спасибо!</div>
+      <div class="modal__title modal__title--ok" id="dialog_label3">Спасибо!</div>
       <div class="modal__text modal__text--ok">Мы свяжемся с вами в ближайшее время</div>
       <button class="modal__btn btn btn-red" onclick="closeDialog(this)" aria-label="Close">Хорошо</button>
     </div>
@@ -542,10 +549,10 @@
 
 
 
+<!-- <script src="js/aos.js"></script> -->
 
-
-<script src="js/vendor.min.js"></script>
-<script src="js/main.min.js"></script>
+<script src="js/vendor.min.js" defer></script>
+<script src="js/main.min.js" defer></script>
 
 </body>
 
