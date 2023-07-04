@@ -49,9 +49,9 @@
 
 				<nav class="menu-start" data-start="1">
 					<ul class="menu" data-move="1" data-media="1">
-						<li><a  href="#catalog">Микрофоны</a></li>
-						<li><a  href="#buy">О компании</a></li>
-						<li><a  href="#delivery">Доставка</a></li>
+						<li><a href="#catalog">Микрофоны</a></li>
+						<li><a href="#buy">О компании</a></li>
+						<li><a href="#delivery">Доставка</a></li>
 					</ul>
 				</nav>
 
@@ -111,7 +111,7 @@
           <div class="circle__wrap-img">
             <picture>
               <source srcset="img/1.webp" type="image/webp">
-              <img src="img/2.jpg" width="150" height="150" alt="">
+              <img src="img/1.jpg" width="150" height="150" alt="">
             </picture>
             <div class="circle__icon icon-bluetooth"></div>
           </div>
@@ -126,7 +126,7 @@
           <div class="circle__wrap-img">
             <picture>
               <source srcset="img/7.webp" type="image/webp">
-              <img src="img/1.jpg" width="150" height="150" alt="">
+              <img src="img/7.jpg" width="150" height="150" alt="">
             </picture>
             <div class="circle__icon icon-battery"></div>
           </div>
@@ -140,7 +140,7 @@
           <div class="circle__wrap-img">
             <picture>
               <source srcset="img/2.webp" type="image/webp">
-              <img src="img/1.jpg" width="150" height="150" alt="">
+              <img src="img/2.jpg" width="150" height="150" alt="">
             </picture>
             <div class="circle__icon icon-volume"></div>
           </div>
@@ -154,7 +154,7 @@
           <div class="circle__wrap-img">
             <picture>
               <source srcset="img/3.webp" type="image/webp">
-              <img src="img/1.jpg" width="150" height="150" alt="">
+              <img src="img/3.jpg" width="150" height="150" alt="">
             </picture>
             <div class="circle__icon icon-mic"></div>
           </div>
@@ -167,6 +167,7 @@
       </div>
     </div>
   </section>
+
 
   <section class="catalog" id="catalog">
     <div class="container">
@@ -183,10 +184,7 @@
               </div>
             </div>
             <a class="product__wrap-img _contain" href="#!">
-              <picture>
-                <source data-srcset="img/02.webp" type="image/webp">
-                <img class="lazy" data-src="img/02.jpg" src="img/1x1.png" loading="lazy" alt="image">
-              </picture>
+              <img class="lazy" data-src="img/02.png" src="img/1x1.png" loading="lazy" alt="image">
             </a>
           </div>
           <div class="product__text">беспроводной Bluetooth-микрофон нового поколения, RETRO STYLE</div>
@@ -204,10 +202,7 @@
                 </div>
               </div>
               <a class="product__wrap-img _contain" href="#!">
-                <picture>
-                  <source data-srcset="img/04.webp" type="image/webp">
-                  <img class="lazy" data-src="img/04.jpg" src="img/1x1.png" loading="lazy" alt="image2">
-                </picture>
+                <img class="lazy" data-src="img/04.png" src="img/1x1.png" loading="lazy" alt="image2">
               </a>
             </div>
           </div>
@@ -227,10 +222,7 @@
                 </div>
               </div>
               <a class="product__wrap-img _contain" href="#!">
-                <picture>
-                  <source data-srcset="img/03.webp" type="image/webp">
-                  <img class="lazy" data-src="img/03.jpg" src="img/1x1.png" loading="lazy" alt="image3">
-                </picture>
+                <img class="lazy" data-src="img/03.png" src="img/1x1.png" loading="lazy" alt="image3">
               </a>
             </div>
           </div>
@@ -248,7 +240,8 @@
     <div class="container">
       <div class="buy__row row">
         <div class="buy__col-title">
-          <h2 class="__title title-2 " data-aos="fade-right"> <span> MADMIC —</span> Профессиональное музыкальное оборудование!</h2>
+          <h2 class="__title title-2 " data-aos="fade-right"> <span> MADMIC —</span> Профессиональное музыкальное
+            оборудование!</h2>
           <a class="btn" href="#!">Перейти в магазин</a>
         </div>
         <div class="buy__col-img">
@@ -417,7 +410,7 @@
 			<div class="footer__col col-md-auto">
 				<div class="footer__contact contact">
 					<div class="contact__icon icon-1 icon-mail"></div>
-					<a class="footer__link" href="#!">info@madmic.pro</a>
+					<a class="" href="mailto:example@email.com" rel="nofollow">info@madmic.pro</a>
 				</div>
 			</div>
 
@@ -447,7 +440,6 @@
   </symbol>
 </svg>
 
-
 <div class="dialog-backdrop" onclick="clickBtnClose(this)">
   <div class="modal" id="dialog-buy" role="dialog" aria-labelledby="dialog_label" aria-modal="true">
 
@@ -458,10 +450,7 @@
     <div class="modal__content">
 
       <div class="modal__head">
-        <picture>
-          <source srcset="img/02.webp" type="image/webp">
-          <img src="img/02.jpg" width="" height="" alt="">
-        </picture>
+        <img src="img/02.png" width="" height="" alt="">
         <div class="">
           <div class="modal__title" id="dialog_label">Tosing q12 pink </div>
           <div class="modal__prices">
@@ -499,7 +488,7 @@
 <div class="dialog-backdrop" onclick="clickBtnClose(this)">
   <div class="modal" id="dialog-request" role="dialog" aria-labelledby="dialog_label2" aria-modal="true">
 
-    <button onclick="closeDialog(this)" class="modal__close" aria-label="Close">
+    <button id="clo" onclick="closeDialog(this)" class="modal__close" aria-label="Close">
       <svg class="icon"><use xlink:href="#icon-close"></use></svg>
     </button>
 
@@ -542,6 +531,7 @@
 
       <div class="modal__title modal__title--ok" id="dialog_label3">Спасибо!</div>
       <div class="modal__text modal__text--ok">Мы свяжемся с вами в ближайшее время</div>
+      <div class="" data-message-text></div>
       <button class="modal__btn btn btn-red" onclick="closeDialog(this)" aria-label="Close">Хорошо</button>
     </div>
   </div>
